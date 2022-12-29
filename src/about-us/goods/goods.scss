@@ -1,0 +1,108 @@
+.goods {
+  &__search {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper {
+    display: block;
+  }
+  &__looking {
+    display: flex;
+    margin-right: 83px;
+    input {
+      margin-left: 20px;
+      width: 180px;
+      height: 30px;
+      border-color: #ffffff;
+      background: #ffffff;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+    }
+  }
+  &__filter {
+    display: flex;
+    &-text {
+      margin-right: 30px;
+    }
+  }
+  &__btns {
+    margin-left: 5px;
+    width: 75px;
+    height: 30px;
+    background: #ffffff;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-color: #ffffff;
+    &-brazil {
+      border-radius: 4px 0px 0px 4px;
+    }
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__card {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 4px 0px 0px 4px;
+    width: 220px;
+    height: 260px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__cards {
+    display: grid;
+    margin-top: 60px;
+    margin-left: 24%;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 70px;
+    row-gap: 60px;
+    justify-items: end;
+    width: 700px;
+    height: 100%;
+  }
+  &__content {
+    width: 220px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  &__country {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    padding-right: 20px;
+  }
+  &__about_it {
+    display: none;
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 355px;
+    }
+    &-text {
+      display: block;
+      width: 418px;
+      height: 100%;
+    }
+    &-lines {
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+    &-descr {
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &-price {
+      margin-left: 10px;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 20px;
+    }
+  }
+}
